@@ -1,5 +1,5 @@
 {% set name = "pyinterpolate" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.4.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
-  sha256: 48b6b31e4dd0763426e673430c8b0ad15fb7708fcde8488dfc8b2e1097c128ea
+  sha256: 887cde6dd0e8fbea2bdbddcd9f45a0e8516e44b63f121a62d63be217bf0dcb21
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -25,6 +25,7 @@ requirements:
     - prettytable
     - rtree
     - requests
+    - pyogrio
     - geopandas
     - pandas
     - scipy
