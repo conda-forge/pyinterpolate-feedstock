@@ -1,5 +1,5 @@
 {% set name = "pyinterpolate" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
-  sha256: dad32490253529b9380797a18713bd62e92299ed87ee97d279a3bf2f481853fb
+  sha256: 1ee7270867124b5510fd6db20d4f5a9b0ac9754bc2c9992e576e6557fe59e596
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -32,7 +32,7 @@ requirements:
     - dask-core
     - numpy
     - matplotlib-base
-    - shapely <2
+    - shapely
 
 test:
   imports:
