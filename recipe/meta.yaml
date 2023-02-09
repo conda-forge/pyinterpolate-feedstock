@@ -32,7 +32,7 @@ requirements:
     - dask-core
     - numpy
     - matplotlib-base
-    - shapely <2
+    - shapely
 
 test:
   imports:
