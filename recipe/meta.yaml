@@ -1,5 +1,5 @@
 {% set name = "pyinterpolate" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
-  sha256: 80d377a632f3e78d7382706f76f4f7d29e480d9427ea931251fa38ca1f4f9d24
+  sha256: a95be06df4f3b70eb96d0c89b3497b9876e8f5e10f420b8d29c1ac8d10056766
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -33,6 +33,7 @@ requirements:
     - matplotlib-base
     - shapely
     - hdbscan
+    - pyarrow
 
 test:
   imports:
