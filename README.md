@@ -1,11 +1,11 @@
-About pyinterpolate
-===================
+About pyinterpolate-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyinterpolate-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DataverseLabs/pyinterpolate
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyinterpolate-feedstock/blob/main/LICENSE.txt)
 
 Summary: Spatial Interpolation in Python
 
