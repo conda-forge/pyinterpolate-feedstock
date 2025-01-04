@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
   sha256: 4c860f662a7c2765b3b5c0b82d597619bf53506baaf47c295fc9064b744d6b14
 
 build:
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - tqdm
     - descartes
     - prettytable
@@ -38,6 +38,8 @@ requirements:
     - deprecation
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyinterpolate
 
