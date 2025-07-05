@@ -21,21 +21,14 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - pydantic
     - tqdm
-    - descartes
-    - prettytable
-    - rtree
-    - pyogrio
     - geopandas
-    - pandas
     - scipy
+    - prettytable
     - dask-core
     - numpy
     - matplotlib-base
-    - shapely
-    - pyarrow
-    - pylibtiff >=0.6.1
-    - deprecation
 
 test:
   requires:
