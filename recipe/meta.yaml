@@ -1,5 +1,5 @@
 {% set name = "pyinterpolate" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyinterpolate-{{ version }}.tar.gz
-  sha256: 2d7d1b8d0e181a213ab3788e8bef6785a1aa7662c5acbe9210e0cd553c4b6b3e
+  sha256: aad98dec1ede82a98e296877e62077be799fc4574290152df50a2c3b4a36e862
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
